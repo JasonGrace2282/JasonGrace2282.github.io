@@ -12,7 +12,7 @@ module.exports = {
     title: `JasonGrace2282's Site`,
     author: {
       name: `JasonGrace2282`,
-      summary: `An avid programmer, physicis enthsiast, and guitarist.`,
+      summary: `, a developer at Manim Community, a Sysadmin at TJ CSL, and a physics enthusiast.\n`,
     },
     description: `Everything JasonGrace2282.`,
     siteUrl: `https://jasongrace2282.github.io/`,

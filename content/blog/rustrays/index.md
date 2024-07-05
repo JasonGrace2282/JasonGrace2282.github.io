@@ -1,6 +1,6 @@
 ---
 title: First Raytracer
-date: "2024-05-07"
+date: "2024-07-05"
 description: "Experience writing my first path tracer in Rust"
 ---
 

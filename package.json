@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "JasonGrace2282 <do-not-reply@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/JasonGrace2282/JasonGrace2282.github.io/issues"
   },
   "dependencies": {
     "@fontsource/merriweather": "^5.0.8",
@@ -32,7 +32,8 @@
   "keywords": [
     "Computer Graphics",
     "Web Development",
-    "Sysadmin"
+    "System Administration",
+    "JasonGrace2282"
   ],
   "license": "0BSD",
   "repository": {

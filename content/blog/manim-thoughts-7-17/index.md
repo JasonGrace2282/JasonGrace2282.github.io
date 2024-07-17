@@ -47,6 +47,7 @@ class Scene:
         last_t = 0
         for t in compute_t_range(animations):
             dt = t - last_t
+            last_t = t
             # update animations (step 4)
             for animation in animations:
                 alpha = t / animation.get_run_time()

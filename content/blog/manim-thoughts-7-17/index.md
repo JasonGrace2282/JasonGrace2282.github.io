@@ -79,7 +79,7 @@ Well, in the actual code, the flow goes something like this
 
 Wow, that's a headache! There's so much interplay between `Scene`,
 `CairoRenderer`, `SceneFileWriter`, and `Camera` it's hard to keep track.
-Fixing this annoying communication was one of the big reasons 
+Fixing this annoying communication was one of the big reasons for the refactor.
 
 Before we move on to the refactor, let's talk about one other thing:
 how do we actually render the mobjects when we do `self.renderer.render(self.moving_mobjects)`?

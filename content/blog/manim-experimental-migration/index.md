@@ -1,16 +1,16 @@
 ---
 title: "A Migration Guide for Manim Community"
 date: "2024-08-02"
-description: "How to migrate your code from v0.19.0 to v0.21.0"
+description: "How to migrate your code from v0.19.0 to the experimental version"
 ---
 
-Manim v0.21.0 introduced a lot of changes, and was the result of
+Manim's Experimental branch introduced a lot of changes, and was the result of
 quite literally rewriting all of Manim. We aren't going to talk about
 why this happened (see [here](https://jasongrace2282.github.io/manim-thoughts-7-17/) if you're interested),
 but more about the big changes that *you*, as a user, should care about.
 Towards the end, we will focus more on what plugin developers should change.
 
-Note that Manim v0.21.0 has the most breaking changes out of any of the
+Note that Manim Experimental has the most breaking changes out of any of the
 most recent releases.
 
 Let's get started!
@@ -26,7 +26,7 @@ not write a video or live preview. Additionally, it is not recommended to use th
 and `write_to_movie` at the same time, as it will reduce the fps of the live preview.
 
 #### OpenGLMobject to Mobject
-Manim v0.21.0 got rid of the concept of an `OpenGLMobject` vs a `Mobject`.
+Manim Experimental got rid of the concept of an `OpenGLMobject` vs a `Mobject`.
 Instead, a `Mobject` is simply a renderer independent Mathematical Object.
 Therefore, you can replace everywhere you used `OpenGLMobject` with `Mobject`,
 and likewise for every other mobject that started with `OpenGL` (e.g.

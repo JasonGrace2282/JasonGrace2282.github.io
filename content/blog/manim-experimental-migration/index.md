@@ -101,6 +101,30 @@ class MyVideo(Scene):
         self.play(m.expand())
 ```
 
+#### Custom Animations
+In order to mimize confusion, we have combined several methods of `Animation` (see [`AnimationProtocol`](#)):
+
+- `Animation._setup_scene` has been merged into `Animation.begin`
+- `Animation.interpolate_mobject` has been merged into `Animation.interpolate`
+- `Animation.clean_up_from_scene` has been merged into `Animation.finish`
+
+If you have overridded any of merged methods, just rename them. For example
+```py
+class MyAnimation(Animation):
+    def clean_up_from_scene(self):
+        x = "action 1"
+
+    def finish(self):
+        y = "action 2"
+```
+would become
+```py
+class MyAnimation(Animation):
+    def finish(self):
+        y = "action 2"
+        x = "action 1"
+```
+
 #### `Scene().render()`
 If you didn't like running your manim scripts from the command line, you
 might have used an idiom that looked something like this:

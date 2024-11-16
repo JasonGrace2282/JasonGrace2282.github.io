@@ -13,10 +13,16 @@ repos:
       - id: check-yaml
       - id: detect-private-key
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.4.22
+    rev: 0.5.1
     hooks:
       - id: uv-lock
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.6.9
     hooks:
       - id: ruff-format
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.18  # Use the ref you want to point at
+    hooks:
+    - id: mdformat
+      additional_dependencies:
+        - mdformat-myst

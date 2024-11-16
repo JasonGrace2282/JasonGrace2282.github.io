@@ -1,8 +1,10 @@
 # First Raytracer
 
 ```{post} July 05, 2024
-:tags: projects
-:category: graphics
+---
+tags: projects
+category: graphics
+---
 ```
 
 A month ago, I set out on a journey to learn Rust. At the same time,

@@ -12,7 +12,7 @@ how it turned out, as you can see with my final render.
 
 <img src="./assets/rust-raytracer.png">
 
-But what is a Ray tracer or a path tracer?
+But what is a Ray tracer?
 
 The fundamental idea behind ray tracing (or more specifically, path tracing)
 is to render images that accurately depict how something looks like in real life.
@@ -25,8 +25,34 @@ But how does it work?
 
 Effectively what happens is we pretend to take a ray of light, and shoot it at some pixels.
 It then computes the color seen in the direction of the rays. Along the way, we have to calculate
-which objects the ray intersects. There have been many advancements in physics that allow us to do this,
-such as Snells law.
+which objects the ray intersects.
+
+Let's say the ray starts at the origin, which we'll call $\mathbf A$, and
+it points in a direction $\mathbf d$. Then, we can represent the ray as the
+function $\mathbf P(t)=\mathbf A+t\mathbf d$.
+
+Now we have to figure out how to insersect it with an object - for mathematical simplicity,
+we'll choose a sphere. A sphere has the equation (in cartesian coordinates):
+
+$$x^2+y^2+z^2=r^2$$
+
+If we want there sphere to be at a point $(C_x, C_y, C_z)$, we then have
+the equation of that sphere as:
+
+$$(x-C_x)^2+(y-C_y)^2+(z-C_z)^2$$
+
+Doing all these subtractions and exponents is quite costly, so let's try to express
+it in terms of vectors and matricies. Interestingly enough, the vector from the center
+$\mathbf C=(C_x, C_y, C_z)$ to a point $\mathbf P=(x, y, z)$ is simply $(\mathbf P-\mathbf C)$.
+
+By the definition of the dot product, we have that
+
+$$(\mathbf P-\mathbf C)^2=(x-C_x)^2+(y-C_y)^2+(z-C_z)^2$$
+
+Thus, any point $\mathbf P(t)$ that satisfies this equation will be on the sphere.
+
+You can then plug in $\mathbf P(t)=\mathbf A+t\mathbf d$, and solve the quadratic
+to get our conditions for a ray intersecting a sphere.
 
 But if you naively try to implement this, you'll notice that the edges of every
 shape are jagged. To fix this, we have to sample some rays *around* the pixel,
@@ -39,11 +65,8 @@ and the right is after:
 The more rays we sample per pixel, the closer it will be to looking "smooth". This is
 called *Antialiasing*!
 
-So, that's the end of my first ray tracer. Where am I going next?
-Well the next step is to improve the speed. To do so, I've started learning [Vulkan](https://www.vulkan.org/),
-so that I can implement it on the GPU. I also might end up porting the
-[Manim Community Renderer](https://github.com/ManimCommunity/manim/blob/experimental/manim/renderer/opengl_renderer.py)
-into WGPU so that it works nicer on MacBooks.
+A lot of stuff still needs to happen to get a working raytracer - namely, setting up normals,
+figuring out ray bounces, occlusion, and much more. But that's a topic for a whole other blog post!
 
 As for where I learned this?
 Check out [https://raytracing.github.io/](https://raytracing.github.io/). The guide

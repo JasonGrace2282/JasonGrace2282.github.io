@@ -8,11 +8,11 @@ This project uses [`uv`](https://docs.astral.sh/uv/#getting-started) to manage d
 `uv`, you can run
 
 ```
-uv run just
+uv run just live
 ```
 
 to run a live compiling session. To produce the final product, run:
 
 ```
-uv run just final
+uv run just html
 ```

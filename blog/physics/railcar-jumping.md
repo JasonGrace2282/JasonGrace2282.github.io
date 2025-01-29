@@ -2,7 +2,7 @@
 
 ```{post} January 28, 2025
 ---
-tags: physics momentum
+tags: physics
 ---
 ```
 

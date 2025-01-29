@@ -2,7 +2,7 @@
 
 ```{post} December 14, 2024
 ---
-tags: docker docker-compose DinD
+tags: docker
 ---
 ```
 

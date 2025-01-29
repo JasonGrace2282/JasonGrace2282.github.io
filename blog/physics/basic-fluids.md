@@ -8,11 +8,11 @@ When it comes to fluids, there's a few things that were never explained
 on my first introduction to the subject. In this post, I intend to explain
 *why* pressure is the same in all directions, and what surface tension actually is.
 
-## Pressure is Isotrophic
+## Pressure is Isotropic
 Consider an infinitisimal wedge in the $xz$ plane, where the cross section is along
 the $y$ direction.
 
-![Diagram of wedge](images/pressure-isotrophic.jpg){w=400px align=center}
+![Diagram of wedge](images/pressure-isotropic.jpg){w=400px align=center}
 
 Writing $F=ma$ in the $z$ direction gives
 
@@ -28,7 +28,7 @@ $$p_x=p_z=p_n\mathrel{\vcenter{:}}= p$$
 
 Since we made no assumptions about the angle $\theta$, we can vary it to whatever we're concerned about.
 It follows that the pressure in the $y$ direction is also the same, by rotating the wedge an angle $\phi$ relative
-to the $z$ axis. Therefore the pressure is isotrophic (i.e. the same in all directions), and we can make pressure
+to the $z$ axis. Therefore the pressure is isotropic (i.e. the same in all directions), and we can make pressure
 a scalar without worrying about its direction.
 
 ## Surface Tension

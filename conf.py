@@ -77,6 +77,7 @@ post_auto_excerpt = 2
 
 myst_enable_extensions = [
     "amsmath",
+    "attrs_inline",
     "colon_fence",
     "deflist",
     "dollarmath",

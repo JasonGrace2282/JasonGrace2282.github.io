@@ -26,17 +26,19 @@ Applying a similar process to the $x$ direction gives us
 
 $$p_x=p_z=p_n\mathrel{\vcenter{:}}= p$$
 
-Since we made no assumptions about the angle $\theta$, we can vary it to whatever area we're concerned about.
-Because the pressure is the same in all directions, we can make pressure a scalar and do not have to worry
-about it's direction.
+Since we made no assumptions about the angle $\theta$, we can vary it to whatever we're concerned about.
+It follows that the pressure in the $y$ direction is also the same, by rotating the wedge an angle $\phi$ relative
+to the $z$ axis. Therefore the pressure is isotrophic (i.e. the same in all directions), and we can make pressure
+a scalar without worrying about its direction.
 
 ## Surface Tension
 Water molecules are held together by strong, *attractive*, hydrogen bonds. By $F=-\nabla U$, this
 means that the potential energy is negative. This potential energy is called the *binding energy*,
-and can also be viewed as the work taken to bring a molecule from infinity into the liquid.
+and can also be viewed as the work taken to bring a molecule from infinity into the liquid without
+changing the kinetic energy (note that this is negative because it must opposite the attractive forces).
 
-It turns out that the curve of the binding energy is steep enough that the contributions to it
-depend only on its immediate neighbors. Using this information, we can create a simplified model
+It turns out that the curve of the binding energy decreases fast enough that the contributions to it
+depend largely on its immediate neighbors. Using this information, we can create a simplified model
 of surface energy. Take for example the figure below.
 
 ![Two particles in a liquid](images/fluid-surface-energy.png){align=center}

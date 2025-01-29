@@ -17,6 +17,7 @@ extensions = [
     "ablog",
     "myst_parser",
     "sphinx_copybutton",
+    "sphinx_design",
     "sphinx.ext.intersphinx",
 ]
 

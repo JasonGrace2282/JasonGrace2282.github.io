@@ -18,7 +18,7 @@ Writing $F=ma$ in the $z$ direction gives
 
 $$p_z\,\mathrm{d}x\,\mathrm{d}y-p_n\cos\theta\left(\dfrac{\mathrm dx}{\cos\theta}\right)\mathrm dy - \rho g\,\mathrm dV=\rho\,\mathrm dV \ddot{z}$$
 
-Taking the limit as $\mathrm dx\to 0,\mathrm dy\to 0,\mathrm dx\to 0$, we end up with
+Taking the limit as $\mathrm dx\to 0,\mathrm dy\to 0,\mathrm dz\to 0$, we end up with
 
 $$p_z=p_n$$
 

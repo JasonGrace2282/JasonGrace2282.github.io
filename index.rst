@@ -18,3 +18,4 @@ my time fixing whatever random stuff seems to break :)
 
    blog
    about
+   writings

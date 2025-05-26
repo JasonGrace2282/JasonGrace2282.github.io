@@ -11,3 +11,4 @@ Stuff I wrote, or helped write!
 - [2024 PhODS Mock F=ma](path:data/2024_PhODS_Mock_Fma.pdf) and [Solutions](path:data/2024_PhODS_Mock_F_ma_Solutions.pdf)
 - 2025 TJPhO (incoming June!)
 - Some [notes](path:data/Angular_Momentum.pdf) on precession
+- [Solutions](path:data/Tong_Multi_vfc3.pdf) to pset 3 of [David Tong's Vector Calc](https://www.damtp.cam.ac.uk/user/tong/vc.html)

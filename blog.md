@@ -1,3 +1,0 @@
-# Blog
-
-populated by ablog

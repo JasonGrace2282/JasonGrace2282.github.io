@@ -1,6 +1,6 @@
 # Jumping off a Train
 
-```{post} January 28, 2025
+```{post}
 ---
 tags: physics
 ---

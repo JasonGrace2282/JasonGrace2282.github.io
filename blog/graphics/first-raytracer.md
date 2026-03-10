@@ -1,6 +1,6 @@
 # First Raytracer
 
-```{post} July 05, 2024
+```{post}
 ---
 tags: projects
 category: graphics

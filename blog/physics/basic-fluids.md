@@ -1,6 +1,6 @@
 # Pressure and Surface Tension
 
-:::{post} January 29, 2025
+:::{post}
 :tags: physics
 :::
 

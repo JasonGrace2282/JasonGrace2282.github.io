@@ -1,6 +1,6 @@
 # Reflections on Maintaining Open Source Software
 
-```{post} November 16, 2024
+```{post}
 ---
 tags: reflections
 category: oss

@@ -1,6 +1,6 @@
 # Docker in Docker with Docker Compose
 
-```{post} December 14, 2024
+```{post}
 ---
 tags: docker
 ---

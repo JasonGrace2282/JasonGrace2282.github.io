@@ -1,6 +1,6 @@
 # Formatting Strings in Python
 
-```{post} March 18, 2025
+```{post}
 ---
 tags: python
 category: coding

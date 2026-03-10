@@ -64,7 +64,7 @@ blog_title = "Aarush Deshpande"
 blog_authors = {
     "Aarush": ("Aarush Deshpande", "https://github.com/JasonGrace2282"),
 }
-blog_post_pattern = "blog/**/*"
+blog_post_pattern = "blog/**/*.md"
 blog_feed_fulltext = True
 blog_feed_subtitle = "Developing and having fun"
 fontawesome_included = True
